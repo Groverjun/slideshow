@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>轮播图</title>
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/default.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body style="zoom: 1;">
+		<div class="poster-main B_Demo" style="margin-top: 100px; width: 1000px; height: 300px;">
+			<div class="poster-btn poster-prev-btn" style="width: 240px; height: 300px; z-index: 4;"></div>
+			<ul class="poster-list" style="width: 1000px; height: 300px;">
+				<li class="poster-item" 
+					style="width: 493.673px; height: 284.812px; 
+					top: 0px; left: 199.497px; z-index: 2; opacity: 1;
+				overflow: hidden;">
+					<a href="#"><img src="img/1.jpg" width="100%"></a>
+				</li>
+				<li class="poster-item" style="z-index: 3; width: 494.327px; height: 285.188px; opacity: 1; left: 305.171px; top: 0px; overflow: hidden;">
+					<a href="#"><img src="img/2.jpg" width="100%"></a>
+				</li>
+				<li class="poster-item" style="z-index: 2; width: 444.795px; height: 256.67px; opacity: 0.753142; left: 434.603px; top: 0px; overflow: hidden;">
+					<a href="##"><img src="img/3.jpg" width="100%"></a>
+				</li>
+				<li class="poster-item" style="z-index: 1; width: 400.264px; height: 231.151px; opacity: 0.417714; left: 559.093px; top: 0px; overflow: hidden;">
+					<a href="##"><img src="img/4.jpg" width="100%"></a>
+				</li>
+				<li class="poster-item" style="z-index: 0; width: 379px; height: 219px; opacity: 0.333333; left: 314.361px; top: 0px; overflow: hidden;">
+					<a href="##"><img src="img/5.jpg" width="100%"></a>
+				</li>
+				<li class="poster-item" style="z-index: 0; width: 399.736px; height: 230.849px; opacity: 0.415619; left: 39.4974px; top: 0px; overflow: hidden;">
+					<a href="##"><img src="img/6.jpg" width="100%"></a>
+				</li>
+				<li class="poster-item" style="z-index: 1; width: 444.205px; height: 256.33px; opacity: 0.746858; left: 119.497px; top: 0px; overflow: hidden;">
+					<a href="##"><img src="img/7.jpg" width="100%"></a>
+				</li>
+			</ul>
+			<div class="poster-btn poster-next-btn" style="width: 240px; height: 300px; z-index: 4;"></div>
+		</div>
+
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/PicCarousel.js"></script>
+		<script type="text/javascript">
+			$(".A_Demo").PicCarousel("init");
+			$(".B_Demo").PicCarousel({
+				"width": 1000, //幻灯片的宽度
+				"height": 300, //幻灯片的高度
+				"posterWidth": 520, //幻灯片第一帧的宽度
+				"posterHeight": 300, //幻灯片第一张的高度
+				"scale": 0.9, //记录显示比例关系
+				"speed": 1500, //记录幻灯片滚动速度
+				"autoPlay": true, //是否开启自动播放
+				"delay": 500, //自动播放间隔
+				"verticalAlign": "middle" //图片对齐位置
+			});
+		</script>
+		<style type="text/css">
+			
+		</style>
+	</body>
+
+</html>
